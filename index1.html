@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <div class="hero">
+        <h3></h3>
+        <h1>For Latest Updates!!!</h1>
+        <br>
+        <p> Subscribe for more details</p>
+        <form name="submit-to-google-sheet">
+            <input type="email" name="email" placeholder="Enter your Email-Id">
+            <button type="submit">
+                <img src="./images/icon.png" width="50px">
+            </button>
+        </form>
+        <span id="msg"></span>
+    </div>
+    
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyX8IxEOnvqqbJcs35espxyiXnxOuC5z0PRjCvn1rv_vx2l6wgkPcTB2p-F5TZFyuZe0Q/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Thank You For Subscribing!"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+</html>

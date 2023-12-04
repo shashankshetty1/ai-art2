@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>AI genereated art Gallary</title>
+</head>
+<body>
+        
+
+    <div class="container">
+        <div class="header">
+            <!-- <a >AI Art Gallery</a> -->
+            <span class = "headleft">
+                <a>Home</a>
+                <a href="index1.html"> Latest Updates</a>
+            </span>
+        </div>
+        <div class="leftMenu">
+            <!-- <p style="font-family: 'Times New Roman', Times, serif;font-size: 125%;">PRESENTATION</p> -->
+            <h3 style="font-family: dancing; font-size: 175%;">Gallery Of AI Generated Images</h3>
+            <p style="font-weight: 300; font-family: 'Times New Roman'">STYLES</p>
+            <select class="styles" onChange="changeStyle(); reOrganize()" id="Selector01">
+                <option value="all">All Styles</option>
+                <option value="animal">Animal</option>
+                <option value="nature">Nature</option>
+                <option value="wallpaper">Wallpaper</option>
+                <option value="abstract">Abstract</option>
+            </select>
+            
+        </div>
+
+        <div class="gridPlace">
+            <div  class="gridArt">
+
+                <!-- placing as much as image required -->
+
+
+                <!-- here below span is used for the small description-->
+
+
+
+                <!-- These are for the animal category -->
+                <art onclick="showArt(this)" ArtStyle = "animal" >
+                    <image class = "image" src="./images/animal1.jpg" />
+                    <span>Deer</span>
+                </art>
+                <art onclick="showArt(this)" ArtStyle = "animal">
+                    <image class = "image"  src="./images/animal2.jpg">
+                    <span>Cat</span>
+                </art>
+                <art onclick="showArt(this)" ArtStyle = "animal">
+                    <image class = "image"  src="./images/animal3.jpg">
+                    <span>Dolphin</art>
+                <art onclick="showArt(this)" ArtStyle = "animal">
+                    <image class = "image" src="./images/animal4.jpg">
+                    <span>Elephant</span>
+                </art>
+                <art onclick="showArt(this)" ArtStyle = "animal">
+                    <image class = "image" src="./images/animal5.jpg">
+                    <span>Horse</span>
+                </art>
+                <art onclick="showArt(this)" ArtStyle = "animal">
+                    <image class = "image" src="./images/animal6.jpg">
+                    <span>Polar Fox</span>
+                </art>
+                <art onclick="showArt(this)" ArtStyle = "animal">
+                    <image class = "image" src="./images/animal7.jpg">
+                    <span>Lion</span>
+                </art>
+                <art onclick="showArt(this)" ArtStyle = "animal">
+                    <image class = "image" src="./images/animal8.jpg">
+                    <span>Mouflon</span>
+                </art>
+                <art onclick="showArt(this)" ArtStyle = "animal">
+                    <image class = "image" src="./images/animal9.jpg">
+                    <span>Sea Turtle</span>
+                </art>
+                <art onclick="showArt(this)" ArtStyle = "animal">
+                    <image class = "image" src="./images/animal10.jpg">
+                    <span>Tiger</span>
+                </art>
+
+                <!-- These are for the nature category
+                 -->
+                <art onclick="showArt(this)" ArtStyle = "nature">
+                    <image class = "image" src="./images/nature1.jpg">
+                     <span>Path and the Trees</span>
+                </art>
+                <art onclick="showArt(this)" ArtStyle = "nature">
+                    <image class = "image" src="./images/nature2.jpg">
+                      <span>Fantancy Mushrooms and Butterflies</span>
+                </art>
+                <art onclick="showArt(this)" ArtStyle = "nature">
+                    <image class = "image" src="./images/nature3.jpg">
+                    <span>Sunlight On the Flowers</span>
+                </art>
+                <art onclick="showArt(this)" ArtStyle = "nature">
+                    <image class = "image" src="./images/nature4.jpg">
+                     <span>Cloudy Mountains</span>
+                </art>
+                <art onclick="showArt(this)" ArtStyle = "nature">
+                    <image class = "image" src="./images/nature5.jpg">
+                    <span>Lake Cottage</span>
+                </art>
+                <art onclick="showArt(this)" ArtStyle = "nature">
+                    <image class = "image" src="./images/nature6.jpg">
+            
+                        <span>the Snowy mountain</span>
+                </art>
+                <art onclick="showArt(this)" ArtStyle = "nature">
+                    <image class = "image" src="./images/nature7.jpg">
+                    <span>Forest Morning</span>
+                </art>
+                <art onclick="showArt(this)" ArtStyle = "nature">
+                    <image class = "image" src="./images/nature8.jpg">
+                    <span>autumn</span>
+                </art>
+                <art onclick="showArt(this)" ArtStyle = "nature">
+                    <image class = "image" src="./images/nature9.jpg">
+                        <span>Sea Royalty</span>
+                </art>
+                <art onclick="showArt(this)" ArtStyle = "nature">
+                    <image class = "image" src="./images/nature10.jpg">
+                    <span>Perfect SunSet</span>
+                </art>
+
+                <!-- These are for the wallpaper category -->
+                <art onclick="showArt(this)" ArtStyle = "wallpaper">
+                    <image class = "image" src="./images/wallpaper1.jpg">
+                    <span>Water Droplets</span>
+                </art>
+                <art onclick="showArt(this)" ArtStyle = "wallpaper">
+                    <image class = "image" src="./images/wallpaper2.jpg">
+                    <span>The fern</span>
+                </art>
+                <art onclick="showArt(this)" ArtStyle = "wallpaper">
+                    <image class = "image" src="./images/wallpaper3.jpg">
+                    <span>Colorful Background</span>
+                </art>
+                <art onclick="showArt(this)" ArtStyle = "wallpaper">
+                    <image class = "image" src="./images/wallpaper4.jpg">
+                    <span>Flora</span>
+                </art>
+                <art onclick="showArt(this)" ArtStyle = "wallpaper">
+                    <image class = "image" src="./images/wallpaper5.jpg">
+                    <span>Love</span>
+                </art>
+                <art onclick="showArt(this)" ArtStyle = "wallpaper">
+                    <image class = "image" src="./images/wallpaper6.jpg">
+                    <span>The Beach and the Boat</span>
+                </art>
+                <art onclick="showArt(this)" ArtStyle = "wallpaper">
+                    <image class = "image" src="./images/wallpaper7.jpg">
+                    <span>Sea-Shells</span>
+                </art>
+                <art onclick="showArt(this)" ArtStyle = "wallpaper">
+                    <image class = "image" src="./images/wallpaper8.jpg">
+                    <span>Stones</span>
+                </art>
+                <art onclick="showArt(this)" ArtStyle = "wallpaper">
+                    <image class = "image" src="./images/wallpaper9.png">
+                    <span>Radiants</span>
+                </art>
+                <art onclick="showArt(this)" ArtStyle = "wallpaper">
+                    <image class = "image" src="./images/wallpaper10.jpg">
+                    <span>Water Spikes</span>
+                </art>
+                <art onclick="showArt(this)" ArtStyle = "abstract">
+                    <image class = "image" src="./images/abstract-1.png">
+                    <span>Crecol</span>
+                </art>
+                <art onclick="showArt(this)"ArtStyle = "abstract">
+                    <image class = "image" src="./images/abstract-2.png">
+                    <span>Sunset of Your Eyes</span>
+                </art>
+                <art onclick="showArt(this)" ArtStyle = "abstract">
+                    <image class = "image" src="./images/abstract-3.png">
+                    <span>Duccol</span>
+                </art>
+                <art onclick="showArt(this)" ArtStyle = "abstract">
+                    <image class = "image" src="./images/abstract-4.png">
+                    <span>Profac</span>
+                </art>
+                <art onclick="showArt(this)" ArtStyle = "abstract">
+                    <image class = "image" src="./images/abstract-5.png">
+                    <span>Artter</span>
+                </art>
+                <art onclick="showArt(this)" ArtStyle = "abstract">
+                    <image class = "image" src="./images/abstract-6.png">
+                    <span>Terics</span>
+                </art>
+                <art onclick="showArt(this)" ArtStyle = "abstract">
+                    <image class = "image" src="./images/abstract-7.png">
+                    <span>Prowessfac</span>
+                </art>
+            
+            </div>
+        </div>
+        
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <div class="m-inner">
+                <image style="height: 96%; width:auto" src="images/abstract-7.png" />
+                <span>Prowessfac</span>
+            </div>
+        </div>
+
+        <script>
+            var modal = document.getElementById("myModal");
+            
+
+            function showArt(art){
+                
+                let images = modal.getElementsByTagName('image');
+                                
+
+                modal.getElementsByTagName('img')[0].src = art.getElementsByTagName('img')[0].src;
+                modal.getElementsByTagName('span')[0].textContent = art.getElementsByTagName('span')[0].textContent;
+                modal.style.display = "block";
+            }
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+            }
+        </script>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
